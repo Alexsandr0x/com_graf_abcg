@@ -2,5 +2,5 @@
 # add_subdirectory(firstapp)
 # add_subdirectory(sierpinski)
 
-add_subdirectory(starfield)
+add_subdirectory(gradient)
 

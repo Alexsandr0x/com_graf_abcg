@@ -65,7 +65,6 @@ void OpenGLWindow::paintGL() {
       abcg::glGetUniformLocation(m_program, "projMatrix")};
   const GLint modelMatrixLoc{
       abcg::glGetUniformLocation(m_program, "modelMatrix")};
-  const GLint colorLoc{abcg::glGetUniformLocation(m_program, "color")};
 
   // Set uniform variables used by every scene object
   abcg::glUniformMatrix4fv(viewMatrixLoc, 1, GL_FALSE, &m_viewMatrix[0][0]);
@@ -78,8 +77,6 @@ void OpenGLWindow::paintGL() {
 
     // Compute model matrix of the current star
     glm::mat4 modelMatrix{1.0f};
-
-    abcg::glUniform4f(colorLoc, 6.0f, 113.0f, 183.0f, 1.0f);
 
     modelMatrix = glm::translate(modelMatrix, position);
     modelMatrix = glm::scale(modelMatrix, glm::vec3(0.2f));
