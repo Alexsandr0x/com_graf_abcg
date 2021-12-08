@@ -2,5 +2,7 @@
 # add_subdirectory(firstapp)
 # add_subdirectory(sierpinski)
 
-add_subdirectory(gradient)
+# add_subdirectory(gradient)
 
+
+add_subdirectory(globe)
